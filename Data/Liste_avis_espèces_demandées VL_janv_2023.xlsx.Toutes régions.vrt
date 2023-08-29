@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="LIST_FLORE_VEGETAL_LOCAL">
+        <SrcDataSource relativeToVRT="1">Liste_avis_espèces_demandées VL_janv_2023.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Toutes régions</SrcLayer>
+        <Field name="idTaxref" src="idTaxref" type="Integer"/>
+        <Field name="Nom_Valide_VL" src="Nom_Valide_VL" type="String"/>
+        <Field name="Région d'origine" src="Région d'origine" type="String"/>
+        <Field name="Avis" src="Avis" type="String"/>
+        <Field name="Type de restriction" src="Type de restriction" type="String"/>
+        <Field name="Motif" src="Motif" type="String"/>
+        <Field name="Départements exclus" src="Départements exclus" type="String"/>
+        <Field name="Commentaire" src="Commentaire" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
