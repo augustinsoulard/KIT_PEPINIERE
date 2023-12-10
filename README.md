@@ -4,11 +4,8 @@
 Projet Qfield pour suivre les plants de récoltes du label végétal local
 Projet Qfield comprenant :
 - Une couche point pour les relevés floristiques ;
-- Une couche point pour les relevés phytosociologiques sigmatiste et les relevés phytocoenotiques ;
-- Une couche point pour les relevés synusiaux ;
-- Une couche polygone pour les habitats (compatible EUNIS, Corine Biotope et Natura 2000) ;
 - Une couche point pour les remarques ;
-- 6 fonds de plan possibles : IGN Infrarouge / IGN Satellite / Google Satellite / Open Street Map / Bing Satellite / ESRI Satellite.
+- 6 fonds de plan possibles : IGN Satellite / Google Satellite / Open Street Map / Bing Satellite / ESRI Satellite.
 
 
 Le fichier zip directement utilisable depuis Qfield est disponible ici : [https://github.com/augustinsoulard/KIT_PEPINIERE/archive/refs/heads/main.zip](https://github.com/augustinsoulard/KIT_PEPINIERE/archive/refs/heads/main.zip)  
