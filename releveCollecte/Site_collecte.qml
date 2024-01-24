@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingTol="1" minScale="100000000" maxScale="0" simplifyDrawingHints="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" version="3.28.10-Firenze" simplifyMaxScale="1" symbologyReferenceScale="-1" readOnly="0">
+<qgis hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyLocal="1" maxScale="0" symbologyReferenceScale="-1" version="3.28.10-Firenze" labelsEnabled="0" minScale="100000000" simplifyMaxScale="1" readOnly="0" simplifyDrawingTol="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal enabled="0" endField="" startExpression="" mode="0" endExpression="" accumulate="0" durationUnit="min" startField="" durationField="codeinsee" fixedDuration="0" limitMode="0">
+  <temporal durationField="codeinsee" startField="" fixedDuration="0" accumulate="0" endExpression="" endField="" startExpression="" durationUnit="min" mode="0" enabled="0" limitMode="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation clamping="Terrain" zoffset="0" extrusionEnabled="0" extrusion="0" binding="Centroid" showMarkerSymbolInSurfacePlots="0" zscale="1" type="IndividualFeatures" symbology="Line" respectLayerSymbol="1">
+  <elevation clamping="Terrain" zoffset="0" zscale="1" extrusionEnabled="0" type="IndividualFeatures" extrusion="0" symbology="Line" binding="Centroid" respectLayerSymbol="1" showMarkerSymbolInSurfacePlots="0">
     <data-defined-properties>
       <Option type="Map">
         <Option name="name" value="" type="QString"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol name="" alpha="1" force_rhr="0" is_animated="0" type="line" clip_to_extent="1" frame_rate="10">
+      <symbol frame_rate="10" name="" is_animated="0" clip_to_extent="1" alpha="1" force_rhr="0" type="line">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -29,7 +29,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+        <layer pass="0" class="SimpleLine" locked="0" enabled="1">
           <Option type="Map">
             <Option name="align_dash_pattern" value="0" type="QString"/>
             <Option name="capstyle" value="square" type="QString"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol name="" alpha="1" force_rhr="0" is_animated="0" type="fill" clip_to_extent="1" frame_rate="10">
+      <symbol frame_rate="10" name="" is_animated="0" clip_to_extent="1" alpha="1" force_rhr="0" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -78,7 +78,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+        <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="255,158,23,255" type="QString"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol name="" alpha="1" force_rhr="0" is_animated="0" type="marker" clip_to_extent="1" frame_rate="10">
+      <symbol frame_rate="10" name="" is_animated="0" clip_to_extent="1" alpha="1" force_rhr="0" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -111,7 +111,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+        <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
@@ -144,9 +144,9 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 forceraster="0" enableorderby="0" referencescale="-1" symbollevels="0" type="singleSymbol">
+  <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" type="singleSymbol" symbollevels="0">
     <symbols>
-      <symbol name="0" alpha="1" force_rhr="0" is_animated="0" type="fill" clip_to_extent="1" frame_rate="10">
+      <symbol frame_rate="10" name="0" is_animated="0" clip_to_extent="1" alpha="1" force_rhr="0" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -154,7 +154,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+        <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="232,0,58,51" type="QString"/>
@@ -194,12 +194,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory maxScaleDenominator="1e+08" direction="0" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" scaleBasedVisibility="0" backgroundAlpha="255" penAlpha="255" sizeType="MM" penColor="#000000" spacing="5" barWidth="5" minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" backgroundColor="#ffffff" minimumSize="0" width="15" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" labelPlacementMethod="XHeight" diagramOrientation="Up" rotationOffset="270" penWidth="0" enabled="0" height="15" opacity="1" spacingUnit="MM">
-      <fontProperties style="" bold="0" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" italic="0" underline="0" strikethrough="0"/>
-      <attribute field="" label="" color="#000000" colorOpacity="1"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory height="15" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" enabled="0" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" showAxis="1" maxScaleDenominator="1e+08" rotationOffset="270" width="15" penColor="#000000" labelPlacementMethod="XHeight" backgroundColor="#ffffff" spacingUnit="MM" minScaleDenominator="0" direction="0" scaleBasedVisibility="0" penWidth="0" scaleDependency="Area" penAlpha="255" minimumSize="0" sizeType="MM" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" spacing="5" diagramOrientation="Up" opacity="1">
+      <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attribute colorOpacity="1" field="" label="" color="#000000"/>
       <axisSymbol>
-        <symbol name="" alpha="1" force_rhr="0" is_animated="0" type="line" clip_to_extent="1" frame_rate="10">
+        <symbol frame_rate="10" name="" is_animated="0" clip_to_extent="1" alpha="1" force_rhr="0" type="line">
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" value="" type="QString"/>
@@ -207,7 +207,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+          <layer pass="0" class="SimpleLine" locked="0" enabled="1">
             <Option type="Map">
               <Option name="align_dash_pattern" value="0" type="QString"/>
               <Option name="capstyle" value="square" type="QString"/>
@@ -249,7 +249,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings priority="0" zIndex="0" showAll="1" linePlacementFlags="18" obstacle="0" dist="0" placement="1">
+  <DiagramLayerSettings zIndex="0" showAll="1" linePlacementFlags="18" obstacle="0" priority="0" dist="0" placement="1">
     <properties>
       <Option type="Map">
         <Option name="name" value="" type="QString"/>
@@ -258,7 +258,7 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
     <checkConfiguration type="Map">
       <Option name="QgsGeometryGapCheck" type="Map">
@@ -271,7 +271,7 @@
   <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="code" configurationFlags="None">
+    <field configurationFlags="None" name="code">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -281,7 +281,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="libelle" configurationFlags="None">
+    <field configurationFlags="None" name="libelle">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -291,7 +291,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="codeinsee" configurationFlags="None">
+    <field configurationFlags="None" name="codeinsee">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -305,7 +305,49 @@
         </config>
       </editWidget>
     </field>
-    <field name="codeeunis" configurationFlags="None">
+    <field configurationFlags="None" name="ph">
+      <editWidget type="ValueRelation">
+        <config>
+          <Option type="Map">
+            <Option name="AllowMulti" value="false" type="bool"/>
+            <Option name="AllowNull" value="true" type="bool"/>
+            <Option name="Description" value="" type="QString"/>
+            <Option name="FilterExpression" value="" type="QString"/>
+            <Option name="Key" value="Field1" type="QString"/>
+            <Option name="Layer" value="PH_8a7b9173_5af6_42c1_87c9_46a8bf7ca93c" type="QString"/>
+            <Option name="LayerName" value="PH" type="QString"/>
+            <Option name="LayerProviderName" value="ogr" type="QString"/>
+            <Option name="LayerSource" value="D:/Github/01_MINI_OUTILS/KIT_PEPINIERE/DataPepiniere.gpkg|layername=PH" type="QString"/>
+            <Option name="NofColumns" value="1" type="int"/>
+            <Option name="OrderByValue" value="false" type="bool"/>
+            <Option name="UseCompleter" value="false" type="bool"/>
+            <Option name="Value" value="Field1" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="humidite">
+      <editWidget type="ValueRelation">
+        <config>
+          <Option type="Map">
+            <Option name="AllowMulti" value="false" type="bool"/>
+            <Option name="AllowNull" value="true" type="bool"/>
+            <Option name="Description" value="" type="QString"/>
+            <Option name="FilterExpression" value="" type="QString"/>
+            <Option name="Key" value="Field1" type="QString"/>
+            <Option name="Layer" value="HUMIDITE_e45afd5d_7d43_4a89_a50d_98b9d013c842" type="QString"/>
+            <Option name="LayerName" value="HUMIDITE" type="QString"/>
+            <Option name="LayerProviderName" value="ogr" type="QString"/>
+            <Option name="LayerSource" value="D:/Github/01_MINI_OUTILS/KIT_PEPINIERE/DataPepiniere.gpkg|layername=HUMIDITE" type="QString"/>
+            <Option name="NofColumns" value="1" type="int"/>
+            <Option name="OrderByValue" value="false" type="bool"/>
+            <Option name="UseCompleter" value="false" type="bool"/>
+            <Option name="Value" value="Field1" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="altitude">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -315,7 +357,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="ph" configurationFlags="None">
+    <field configurationFlags="None" name="proprietai">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -325,27 +367,39 @@
         </config>
       </editWidget>
     </field>
-    <field name="humidite" configurationFlags="None">
-      <editWidget type="TextEdit">
+    <field configurationFlags="None" name="habitat">
+      <editWidget type="ValueRelation">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="AllowMulti" value="false" type="bool"/>
+            <Option name="AllowNull" value="true" type="bool"/>
+            <Option name="Description" value="" type="QString"/>
+            <Option name="FilterExpression" value="" type="QString"/>
+            <Option name="Key" value="LB_HAB_FR" type="QString"/>
+            <Option name="Layer" value="EUNIS_2019_247bd53b_00c8_468a_8de0_0e1703f277a3" type="QString"/>
+            <Option name="LayerName" value="EUNIS_2019" type="QString"/>
+            <Option name="LayerProviderName" value="ogr" type="QString"/>
+            <Option name="LayerSource" value="D:/Github/01_MINI_OUTILS/KIT_PEPINIERE/DataPepiniere.gpkg|layername=EUNIS_2019" type="QString"/>
+            <Option name="NofColumns" value="1" type="int"/>
+            <Option name="OrderByValue" value="false" type="bool"/>
+            <Option name="UseCompleter" value="false" type="bool"/>
+            <Option name="Value" value="LB_HAB_FR" type="QString"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="altitude" configurationFlags="None">
-      <editWidget type="TextEdit">
+    <field configurationFlags="None" name="exportpepi">
+      <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option name="CheckedState" value="Fait" type="QString"/>
+            <Option name="TextDisplayMethod" value="1" type="int"/>
+            <Option name="UncheckedState" value="A faire" type="QString"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="proprietai" configurationFlags="None">
+    <field configurationFlags="None" name="codeeunis">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -357,60 +411,72 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="code" index="0" name=""/>
-    <alias field="libelle" index="1" name=""/>
-    <alias field="codeinsee" index="2" name=""/>
-    <alias field="codeeunis" index="3" name=""/>
-    <alias field="ph" index="4" name=""/>
-    <alias field="humidite" index="5" name=""/>
-    <alias field="altitude" index="6" name=""/>
-    <alias field="proprietai" index="7" name=""/>
+    <alias index="0" name="" field="code"/>
+    <alias index="1" name="" field="libelle"/>
+    <alias index="2" name="" field="codeinsee"/>
+    <alias index="3" name="" field="ph"/>
+    <alias index="4" name="" field="humidite"/>
+    <alias index="5" name="" field="altitude"/>
+    <alias index="6" name="" field="proprietai"/>
+    <alias index="7" name="" field="habitat"/>
+    <alias index="8" name="Export dans pépicollecte" field="exportpepi"/>
+    <alias index="9" name="" field="codeeunis"/>
   </aliases>
   <defaults>
-    <default field="code" expression="" applyOnUpdate="0"/>
-    <default field="libelle" expression="" applyOnUpdate="0"/>
-    <default field="codeinsee" expression="" applyOnUpdate="0"/>
-    <default field="codeeunis" expression="" applyOnUpdate="0"/>
-    <default field="ph" expression="" applyOnUpdate="0"/>
-    <default field="humidite" expression="" applyOnUpdate="0"/>
-    <default field="altitude" expression="" applyOnUpdate="0"/>
-    <default field="proprietai" expression="" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" expression="" field="code"/>
+    <default applyOnUpdate="0" expression="" field="libelle"/>
+    <default applyOnUpdate="0" expression="" field="codeinsee"/>
+    <default applyOnUpdate="0" expression="" field="ph"/>
+    <default applyOnUpdate="0" expression="" field="humidite"/>
+    <default applyOnUpdate="0" expression="" field="altitude"/>
+    <default applyOnUpdate="0" expression="" field="proprietai"/>
+    <default applyOnUpdate="0" expression="" field="habitat"/>
+    <default applyOnUpdate="0" expression="" field="exportpepi"/>
+    <default applyOnUpdate="0" expression="" field="codeeunis"/>
   </defaults>
   <constraints>
-    <constraint field="code" exp_strength="0" unique_strength="0" notnull_strength="1" constraints="1"/>
-    <constraint field="libelle" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint field="codeinsee" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint field="codeeunis" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint field="ph" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint field="humidite" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint field="altitude" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint field="proprietai" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint exp_strength="0" field="code" constraints="1" unique_strength="0" notnull_strength="1"/>
+    <constraint exp_strength="0" field="libelle" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="codeinsee" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="ph" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="humidite" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="altitude" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="proprietai" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="habitat" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="exportpepi" constraints="0" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" field="codeeunis" constraints="0" unique_strength="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="code" desc="" exp=""/>
-    <constraint field="libelle" desc="" exp=""/>
-    <constraint field="codeinsee" desc="" exp=""/>
-    <constraint field="codeeunis" desc="" exp=""/>
-    <constraint field="ph" desc="" exp=""/>
-    <constraint field="humidite" desc="" exp=""/>
-    <constraint field="altitude" desc="" exp=""/>
-    <constraint field="proprietai" desc="" exp=""/>
+    <constraint field="code" exp="" desc=""/>
+    <constraint field="libelle" exp="" desc=""/>
+    <constraint field="codeinsee" exp="" desc=""/>
+    <constraint field="ph" exp="" desc=""/>
+    <constraint field="humidite" exp="" desc=""/>
+    <constraint field="altitude" exp="" desc=""/>
+    <constraint field="proprietai" exp="" desc=""/>
+    <constraint field="habitat" exp="" desc=""/>
+    <constraint field="exportpepi" exp="" desc=""/>
+    <constraint field="codeeunis" exp="" desc=""/>
   </constraintExpressions>
-  <expressionfields/>
+  <expressionfields>
+    <field precision="0" name="codeeunis" length="0" expression="attribute(get_feature('EUNIS_2019', 'LB_HAB_FR',&quot;habitat&quot;), 'LB_CODE' )" type="10" subType="0" typeName="string" comment=""/>
+  </expressionfields>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;habitat&quot;">
     <columns>
-      <column name="code" width="-1" hidden="0" type="field"/>
-      <column name="libelle" width="-1" hidden="0" type="field"/>
-      <column name="codeinsee" width="-1" hidden="0" type="field"/>
-      <column name="codeeunis" width="-1" hidden="0" type="field"/>
-      <column name="ph" width="-1" hidden="0" type="field"/>
-      <column name="humidite" width="-1" hidden="0" type="field"/>
-      <column name="altitude" width="-1" hidden="0" type="field"/>
-      <column name="proprietai" width="-1" hidden="0" type="field"/>
-      <column width="-1" hidden="1" type="actions"/>
+      <column name="code" type="field" width="-1" hidden="0"/>
+      <column name="libelle" type="field" width="-1" hidden="0"/>
+      <column name="codeinsee" type="field" width="-1" hidden="0"/>
+      <column name="ph" type="field" width="-1" hidden="0"/>
+      <column name="humidite" type="field" width="-1" hidden="0"/>
+      <column name="altitude" type="field" width="-1" hidden="0"/>
+      <column name="proprietai" type="field" width="-1" hidden="0"/>
+      <column name="habitat" type="field" width="-1" hidden="0"/>
+      <column name="codeeunis" type="field" width="-1" hidden="0"/>
+      <column name="exportpepi" type="field" width="-1" hidden="0"/>
+      <column type="actions" width="-1" hidden="1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -440,12 +506,69 @@ def my_form_open(dialog, layer, feature):
     control = dialog.findChild(QWidget, "MyLineEdit")
 ]]></editforminitcode>
   <featformsuppress>0</featformsuppress>
-  <editorlayout>generatedlayout</editorlayout>
+  <editorlayout>tablayout</editorlayout>
+  <attributeEditorForm>
+    <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+      <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+    </labelStyle>
+    <attributeEditorField showLabel="1" index="0" name="code">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="1" name="libelle">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="7" name="habitat">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="9" name="codeeunis">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="2" name="codeinsee">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="3" name="ph">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="4" name="humidite">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="5" name="altitude">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="6" name="proprietai">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+    <attributeEditorField showLabel="1" index="8" name="exportpepi">
+      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" underline="0" strikethrough="0" style="" italic="0"/>
+      </labelStyle>
+    </attributeEditorField>
+  </attributeEditorForm>
   <editable>
     <field name="altitude" editable="1"/>
     <field name="code" editable="1"/>
-    <field name="codeeunis" editable="1"/>
+    <field name="codeeunis" editable="0"/>
     <field name="codeinsee" editable="1"/>
+    <field name="exportpepi" editable="1"/>
+    <field name="habitat" editable="1"/>
     <field name="humidite" editable="1"/>
     <field name="libelle" editable="1"/>
     <field name="ph" editable="1"/>
@@ -456,20 +579,24 @@ def my_form_open(dialog, layer, feature):
     <field name="code" labelOnTop="0"/>
     <field name="codeeunis" labelOnTop="0"/>
     <field name="codeinsee" labelOnTop="0"/>
+    <field name="exportpepi" labelOnTop="0"/>
+    <field name="habitat" labelOnTop="0"/>
     <field name="humidite" labelOnTop="0"/>
     <field name="libelle" labelOnTop="0"/>
     <field name="ph" labelOnTop="0"/>
     <field name="proprietai" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
-    <field reuseLastValue="0" name="altitude"/>
-    <field reuseLastValue="0" name="code"/>
-    <field reuseLastValue="0" name="codeeunis"/>
-    <field reuseLastValue="0" name="codeinsee"/>
-    <field reuseLastValue="0" name="humidite"/>
-    <field reuseLastValue="0" name="libelle"/>
-    <field reuseLastValue="0" name="ph"/>
-    <field reuseLastValue="0" name="proprietai"/>
+    <field name="altitude" reuseLastValue="0"/>
+    <field name="code" reuseLastValue="0"/>
+    <field name="codeeunis" reuseLastValue="0"/>
+    <field name="codeinsee" reuseLastValue="0"/>
+    <field name="exportpepi" reuseLastValue="0"/>
+    <field name="habitat" reuseLastValue="0"/>
+    <field name="humidite" reuseLastValue="0"/>
+    <field name="libelle" reuseLastValue="0"/>
+    <field name="ph" reuseLastValue="0"/>
+    <field name="proprietai" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
